@@ -49,9 +49,7 @@ export default class Task extends React.Component {
                         <Number>{this.props.task.number}</Number>
                         <Btn><Button small="true">View</Button></Btn>
                     </Header>
-                        
                         <p>{this.props.task.content}</p>
-                        
                         <Submitted>submitted by {this.props.task.submittedBy}</Submitted>
                     </Card>
                     </Container>

@@ -11,22 +11,22 @@ const initialData = {
         'column-1':{
             id: 'column-1',
             title: 'Operations',
-            taskIds: ['task-1', 'task-2','task-3','task-4', 'task-5','task-6']
+            taskIds: ['task-1', 'task-2','task-6']
         },
         'column-2':{
             id: 'column-2',
             title: 'Administration',
-            taskIds: []
+            taskIds: ['task-3']
         },
         'column-3':{
             id: 'column-3',
             title: 'Application Support',
-            taskIds: []
+            taskIds: ['task-4']
         },
         'column-4':{
             id: 'column-4',
             title: 'Databases',
-            taskIds: []
+            taskIds: ['task-5']
         },
     },
     columnOrder: ['column-1','column-2','column-3','column-4'],
