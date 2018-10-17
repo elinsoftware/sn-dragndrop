@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@atlaskit/css-reset": "^3.0.2",
+    "@blueprintjs/core": "^3.7.0",
+    "antd": "^3.10.1",
     "react": "^16.5.2",
+    "react-beautiful-dnd": "^9.0.2",
     "react-dom": "^16.5.2",
-    "react-scripts": "2.0.5"
+    "react-scripts": "2.0.5",
+    "styled-components": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
