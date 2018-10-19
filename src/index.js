@@ -6,6 +6,7 @@ import '@atlaskit/css-reset'
 import {DragDropContext, Droppable} from 'react-beautiful-dnd'
 import styled from 'styled-components'
 
+
 const Container = styled.div`
     display: flex;
 `
@@ -13,7 +14,7 @@ const Container = styled.div`
 class App extends React.Component {
     state = initialData
     onDragEnd = result => {
-    
+        //console.log(this.state.tasks[result.draggableId].number+" moved to position #"+result.destination.index+" of "+this.state.columns[result.destination.droppableId].title)
         const {destination, source, draggableId, type} = result;
         if (!destination){
             return

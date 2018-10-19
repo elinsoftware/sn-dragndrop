@@ -1,15 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 import {Draggable} from 'react-beautiful-dnd'
-import { Button, Card, Elevation } from "@blueprintjs/core";
+import { Button, Card, Elevation, Tag } from "@blueprintjs/core";
 import '@blueprintjs/core/lib/css/blueprint.css'
 
 const Container = styled.div`
     padding: 8px;
     margin-bottom:8px;   
 `
-const Header = styled.div`
+const Row = styled.div`
     display:flex;
+`
+const RowM = styled.div`
+    display:flex;
+    margin-top:15px;
 `
 const Number = styled.div`
     position:relative;
@@ -25,10 +29,23 @@ const Btn = styled.div`
     width:50%;
     -webkit-justify-content: flex-end;
 `
+
+const T = styled.div`
+    display:flex;
+    justify-content:end;
+    width:50%;
+    -webkit-justify-content: flex-end;
+    width:auto%;
+    margin-right:-5px;
+`
+
 const Submitted = styled.div`
     color: #5c7080;
     font-size:11px;
-    margin-top: 10px;
+    position:relative;
+    float:left;
+    width:70%;
+    margin-top:3px;
 `
 export default class Task extends React.Component {
     render(){
@@ -44,13 +61,18 @@ export default class Task extends React.Component {
                       {...provided.dragHandleProps}
                       isDragging = {snapshot.isDragging}
                     >
-                    <Card interactive={true} elevation={Elevation.TWO}>
-                    <Header>
+                    <Card interactive={true} elevation={Elevation.ONE}>
+                    <Row>
                         <Number>{this.props.task.number}</Number>
                         <Btn><Button small="true">View</Button></Btn>
-                    </Header>
+                    </Row>
                         <p>{this.props.task.content}</p>
-                        <Submitted>submitted by {this.props.task.submittedBy}</Submitted>
+                    <RowM>
+                        <Submitted>{this.props.task.submittedBy}</Submitted>
+                        {this.props.task.tag &&
+                        <T><Tag intent={this.props.task.tagColor}>{this.props.task.tag}</Tag></T>
+                        }
+                    </RowM>
                     </Card>
                     </Container>
                )}

@@ -1,11 +1,11 @@
 const initialData = {
     tasks: {
-        'task-1': {id: 'task-1', content:"la la one", number:"INC026232", submittedBy:"Alex Moreno"},
-        'task-2': {id: 'task-2', content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis libero quam.Fusce eu bibendum.", number:"REC011332", submittedBy:"Alex Moreno"},
-        'task-3': {id: 'task-3', content:"bingo three", number:"REC011732", submittedBy:"Alex Moreno"},
-        'task-4': {id: 'task-4', content:"gazorpazorp", number:"INC026232", submittedBy:"Alex Moreno"},
-        'task-5': {id: 'task-5', content:"millenium", number:"RED058232", submittedBy:"Alex Moreno"},
-        'task-6': {id: 'task-6', content:"Beth", number:"INC020022", submittedBy:"Alex Moreno"},
+        'task-1': {id: 'task-1', content:"Manager can't access SAP Controlling application", number:"INC026232", submittedBy:"Alex Moreno", tag:"vip", tagColor:"success"},
+        'task-2': {id: 'task-2', content:"Lost connection to the wireless network", number:"REC011332", submittedBy:"Vanessa Lewallen"},
+        'task-3': {id: 'task-3', content:"Office Keys - Request to get a new one", number:"REC011732", submittedBy:"Bow Ruggeri"},
+        'task-4': {id: 'task-4', content:"EMAIL is slow when an attachment is involved", number:"INC026232", submittedBy:"Carol Coughlin",tag:"critical", tagColor:"danger"},
+        'task-5': {id: 'task-5', content:"Need access to sales DB for the West", number:"REC058232", submittedBy:"Rick Berzle"},
+        'task-6': {id: 'task-6', content:"File Server is 80% full - Needs upgrade", number:"INC020022", submittedBy:"David Loo"},
     },
     columns:{
         'column-1':{

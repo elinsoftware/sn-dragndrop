@@ -1,0 +1,49 @@
+<style>
+
+
+/*ribbon css */
+
+.ribbon{
+  /* IE10 Consumer Preview */ 
+  background-image: -ms-radial-gradient(center top, circle farthest-side, #FF0000 0%, #990000 100%);
+  /* Mozilla Firefox */ 
+  background-image: -moz-radial-gradient(center top, circle farthest-side, #FF0000 0%, #990000 100%);
+  /* Opera */ 
+  background-image: -o-radial-gradient(center top, circle farthest-side, #FF0000 0%, #990000 100%);
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(radial, center top, 0, center top, 487, color-stop(0, #FF0000), color-stop(1, #990000));
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-radial-gradient(center top, circle farthest-side, #FF0000 0%, #990000 100%);
+  /* W3C Markup, IE10 Release Preview */ 
+  background-image: radial-gradient(circle farthest-side at center top, #FF0000 0%, #990000 100%);
+  width: 10px;
+  height: 20px;
+  position: relative;
+  border-top-right-radius: .2em;
+  border-top-left-radius: .2em;
+  margin: auto;
+  font-family: 'Kite One', sans-serif;
+}
+.ribbon:before{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+	height: 0;
+	border-top: 5px solid #990000;
+	border-right: 5px solid transparent;
+}
+.ribbon:after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  width: 0;
+	height: 0;
+	border-top: 5px solid #990000;
+	border-left: 5px solid transparent;
+}
+
+</style>
+<div class="ribbon"></div>
